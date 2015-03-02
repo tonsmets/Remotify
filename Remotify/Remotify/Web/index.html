@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Remotify - Control Spotify from your iOS device!</title>
+        <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+            color: #ffffff;
+            font-family: Arial;
+        }
+        
+        body {
+            background-color: #333333;
+        }
+        
+        #content {
+            width: 600px;
+            height: 400px;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            margin-top: -200px;
+            margin-left: -300px;
+        }
+        
+        #content span.logo {
+            width: 600px;
+            height: 240px;
+            text-indent: -9999px;
+            display: block;
+            background-image: url('logo_small.png');
+            background-repeat: no-repeat;
+            border-bottom: 1px solid #ffffff;
+            margin-bottom: 20px;
+        }
+        
+        #content ul {
+            list-style-type: none;
+        }
+        
+        #content ul li {
+            padding-bottom: 2px;
+        }
+        
+        #content ul li span {
+            text-decoration:none;
+            width: 20px;
+            height: 20px;
+            border: 1px solid #cccccc;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            display: inline-block;
+            text-align: center;
+            background-color: #222222;
+            vertical-align: center;
+            font-style: none;
+            padding-top: 2px;
+            margin-right: 2px;
+            color: #6DAF32;
+        }
+        #content table {
+            width: 600px;
+        }
+        
+        p {
+            padding: 10px;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="content">
+            <span class="logo">Remotify</span>
+            <table>
+                <tr>
+                    <td style="width: 400px;">
+                        <p>
+                        To use this Spotify Remote, install the app! Or write your own application. The server accepts HTTP Post requests.
+                        Simply send a post request to this url and port. Use the parameter-key &quot;<b>action</b>&quot; with one of the following parameter-values. It's just the number!
+                        </p>
+                    </td>
+                    <td style="border: 1px solid #ffffff; padding: 10px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; background-color: #444444;">
+                        <ul>
+                            <li><span>0</span> Pause</li>
+                            <li><span>1</span> Play</li>
+                            <li><span>2</span> Previous track</li>
+                            <li><span>3</span> Next track</li>
+                            <li><span>4</span> Get current track</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+            
+        </div>
+    </body>
+</html>
