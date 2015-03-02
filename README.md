@@ -9,7 +9,7 @@ Note that I am NOT responsible for malfunctioning of one of the two components. 
 ## Used libraries
 To get an easy access to the Spotify controls in the host application I used [Tomek Wójcik's](https://github.com/tomekwojcik) awesome tiny command-line program [tune-control](http://tomekwojcik.github.io/tune-control/). It enabled me to interact with Spotify in a very easy way.
 
-The host application server some kind of API that the iOS app uses. Is used [Robbie Hanson's](https://github.com/robbiehanson) library called [CocoaHTTPServer](https://github.com/robbiehanson/CocoaHTTPServer). I absolutely love the simplicity of this library. 
+The host application serves some kind of API that the iOS app uses. Is used [Robbie Hanson's](https://github.com/robbiehanson) library called [CocoaHTTPServer](https://github.com/robbiehanson/CocoaHTTPServer). I absolutely love the simplicity of this library. 
 
 ## Usage
 Connect your Mac running Spotify and your iOS device to the same network!!
@@ -19,7 +19,7 @@ First fire up Spotify, no need to play a song yet. Now fire up the host applicat
 Now fire up the iOS app on your phone and input the IP-address as shown in the host application. Also add the port! The app should automatically connect to the host. The app also shows the song info with the controls. Enjoy it!
 
 ## Getting it up and running
-I made a copy of the host app available [here for download](http://www.tonsmets.nl/downloads/Remotify-v1.0.0.dmg). It is signed using an old certificate I had from the iOS program I followed at school so ignore any warnings. If you don't trust the package you could also compile it yourself via XCode.
+I made a copy of the host application (OSX) available [here for download](http://www.tonsmets.nl/downloads/Remotify-v1.0.0.dmg). It is signed using an old certificate I had from the iOS program I followed at school so ignore any warnings. If you don't trust the package you could also compile it yourself via XCode.
 
 For non-developers the journey ends here... The iOS app is not available in the app store. It was built for one-time usage so I didn't feel the need to deploy it. If you are an iOS developer yourself you can compile and deploy the app to your phone yourself. 
 
